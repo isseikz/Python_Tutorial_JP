@@ -12,3 +12,7 @@ Jupyter Notebookで書かれたこのテキストは，直接実行可能なフ�
 ## 目次
 1. Pythonで画面出力：`print`文
 Python_tutorial_print.ipynb
+
+
+## License
+MIT
