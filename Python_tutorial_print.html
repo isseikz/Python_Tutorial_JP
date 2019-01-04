@@ -1,0 +1,330 @@
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Python&#12391;&#20986;&#21147;&#65306;print&#25991;">Python&#12391;&#20986;&#21147;&#65306;print&#25991;<a class="anchor-link" href="#Python&#12391;&#20986;&#21147;&#65306;print&#25991;">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>コマンド画面に文字や値を表示させることを「出力する」という。</li>
+<li>Pythonでは、プログラムの計算結果をコマンド画面上に表示させるために<code>print()</code>を用いる。<ul>
+<li><code>print('文字列')</code>では、<code>''</code>で囲まれた部分がそのまま文字列とみなして画面に出力する。</li>
+<li><code>print(変数)</code>では，変数の値を画面に出力する。変数は文字列でも数値でも良い。</li>
+<li>他にも，<code>print('文字列', 変数)</code>や<code>print(f'文字列 {変数}')</code>などのように便利な書き方がある。</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>文字列の表示</li>
+</ol>
+<p>出力させたい文字列を<code>''</code>で囲み、<code>print('文字列')</code>とすると、コマンド画面に文字を表示させることができます。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello world!&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hello world!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※<code>''</code>の値を変えて、<code>Shift</code>キーと<code>Enter</code>キーを同時に押してみましょう。その下に表示された文字が変化するはずです。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>また、カッコの中に変数を入れると、変数の値を出力させることができます。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>abcde
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>※変数<code>text</code>の右辺の文字を変えて、<code>Shift</code>キーと<code>Enter</code>キーを同時に押してみましょう。その下に表示された文字が変化するはずです。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>文字列と変数は<code>,</code>を用いて横に並べることもできます。これまでの例と同様に、文字や変数の値を変えてみましょう。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;変数textの値は &#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="s1">&#39;です.&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>変数textの値は  abcde です.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>変数の値が数値の場合には、その値を出力します。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">3.1415926</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pi=&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>pi= 3.1415926
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>print(f'文字列... {変数} 文字列... {変数}')</code>では、文字列と変数の値を一緒に混ぜた形式で出力することができます。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mf">2.73</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;pi= </span><span class="si">{pi}</span><span class="s1">, e= </span><span class="si">{e}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>pi= 3.14, e= 2.73
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>今回は、<code>print</code>文の基本的な使い方を紹介しました。沢山<code>print</code>して、使い方に慣れましょう！</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>より詳しく知りたい場合は...</p>
+<ul>
+<li>「組み込み関数」. Python公式ドキュメント. <a href="https://docs.python.jp/3/library/functions.html#print">https://docs.python.jp/3/library/functions.html#print</a></li>
+<li>「【Python入門】文字列出力print()をマスターしよう！」.株式会社 侍(2018).<a href="https://www.sejuku.net/blog/61602">https://www.sejuku.net/blog/61602</a></li>
+<li>「Pythonのprint関数で文字列、数値および変数の値を出力」.nkmk.me(2017).<a href="https://note.nkmk.me/python-print-basic/">https://note.nkmk.me/python-print-basic/</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+ 
+
